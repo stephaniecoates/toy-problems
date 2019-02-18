@@ -15,7 +15,7 @@ const sortedReviews = reviews.reduce(groupByOption2, {})
 function groupByOption1 (acc, review) {
   if (acc[review] >=1) acc[review]++
   else acc[review] = 1
-  return {...acc}
+  return acc
 }
 
 function groupByOption2 (acc, num) {
